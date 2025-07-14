@@ -1,0 +1,128 @@
+/* Importing Gogle fonts - Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#eceffe, #ced6fb);
+}
+
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.card-list .card-item {
+  list-style: none;
+}
+
+/* .swiper-slide {
+  width: 30% !important;
+  max-width: 90%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+} */
+
+.card-list .card-item .card-link {
+  user-select: none;
+  display: block;
+  background-color: white;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 20px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover {
+  border-color: #5372f0;
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+  color: #5372f0;
+  padding: 8px 16px;
+  font-size: 0.96rem;
+  font-weight: 500;
+  margin: 16px 0 18px;
+  background: #dde4ff;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.card-list .card-link .badge.designer {
+  color: #075b07;
+  background: #a1d7a1;
+}
+
+.card-list .card-link .badge.hr {
+  color: #b22485;
+  background: #f7dff5;
+}
+
+.card-list .card-link .badge.cyber {
+  color: #b25a2b;
+  background: #ffe3d2;
+}
+
+.card-list .card-link .badge.backend {
+  color: #205c20;
+  background: #d6f8d6;
+}
+
+.card-list .card-link .badge.frontend {
+  color: #856404;
+  background: #fff3cd;
+}
+
+.card-list .card-link .card-title {
+  font-size: 1.19rem;
+  color: black;
+  font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border: 2px solid #5372f0;
+  transform: rotate(-45deg);
+}
+
+.card-list .card-link:hover .card-button {
+  color: white;
+  background: #5372f0;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: #5372f0;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
